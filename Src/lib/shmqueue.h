@@ -59,7 +59,8 @@ namespace common
 	template <class T>
 	cShmQueue<T>::~cShmQueue() 
 	{
-		clear();
+		// does not clear data
+		// because another process access shared memory data
 	}
 
 
