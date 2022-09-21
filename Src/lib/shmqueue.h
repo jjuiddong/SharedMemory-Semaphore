@@ -50,16 +50,8 @@ namespace common
 		, SIZE(size)
 	{
 		const string shmName = m_name + "_shm";
-		const int shmSize = sizeof(T) * size + (sizeof(int)*2); // 8: front, rear size
-
-		if (m_shm.Init(shmName, shmSize))
-		{
-			//// initialize front, rear index
-			//m_mutex.Lock();
-			//*(int*)m_shm.m_memPtr = 0; // front index
-			//*(int*)(m_shm.m_memPtr + sizeof(int)) = 0; // rear index
-			//m_mutex.Unlock();
-		}
+		const int shmSize = sizeof(T) * size + (sizeof(int)*2); // sizeof(int)*2: front, rear size
+		m_shm.Init(shmName, shmSize);
 	}
 
 
