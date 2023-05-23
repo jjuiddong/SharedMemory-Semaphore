@@ -148,7 +148,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\lib\shmqueue.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>

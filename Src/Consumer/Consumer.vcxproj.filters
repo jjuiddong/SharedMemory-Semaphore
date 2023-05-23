@@ -3,7 +3,4 @@
   <ItemGroup>
     <ClCompile Include="Consumer.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\lib\shmqueue.h" />
-  </ItemGroup>
 </Project>

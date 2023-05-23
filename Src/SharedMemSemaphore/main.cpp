@@ -6,7 +6,7 @@
 // start SharedMemSemphore.exe next
 //
 #include "stdafx.h"
-#include "../lib/shmqueue.h"
+//#include "../lib/shmqueue.h"
 
 int main() 
 {
